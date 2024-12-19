@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
+import org.testng.Reporter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -34,5 +35,6 @@ public class Login
 	    Thread.sleep(1000);
 	    driver.findElement(By.xpath("//*[@id=\"send2\"]/span")).click();
 	    System.out.println("Login completed");
+	    Reporter.log("Login successfully");
 	}
 }
